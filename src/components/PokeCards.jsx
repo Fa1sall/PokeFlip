@@ -119,8 +119,10 @@ export function PokeCards({ setAppStatus, difficulty }) {
           >
             {pokemonData.map((card) => (
               <Tilt
+                tiltEnable={true}
                 key={card.id}
                 reset={true}
+                onClick={(e) => e.currentTarget.Tilt.resetTilt()}
                 className={`w-full max-w-[170px] h-full
                   ${isShuffling ? "opacity-0" : "opacity-100"}
                   transition-opacity duration-300 ease-in-out cursor-pointer `}

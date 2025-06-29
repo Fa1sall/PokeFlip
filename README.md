@@ -1,12 +1,52 @@
-# React + Vite
+# 🎮 PokeFlip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**PokeFlip** is a Pokémon memory card game built with **React** and **Tailwind CSS**. Select unique cards without repeating to achieve the highest score.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Memory-based card selection logic.
+- Dynamic shuffling after each correct selection.
+- Difficulty levels: Easy, Medium, Hard.
+- Responsive grid layout for all screen sizes.
+- Tilt animation using `react-parallax-tilt`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend framework.
+- **Tailwind CSS** – Styling and layout.
+- **react-parallax-tilt** – Card hover tilt effects.
+- **PokéAPI** – Pokémon data fetching.
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+  <img src="./src/assets/screenshots/home.jpeg" width="600" alt="Home Screen"/>
+  <br/>
+  <img src="./src/assets/screenshots/gameplay.jpeg" width="600" alt="Gameplay Screen"/>
+</div>
+
+---
+
+## 📝 How to Play
+
+- Select cards without repeating any.
+- Cards reshuffle after each selection.
+- Selecting a duplicate ends the game.
+- Select all unique cards to win.
+
+---
+
+## 💻 Installation
+
+```bash
+git clone https://github.com/yourusername/PokeFlip.git
+cd PokeFlip
+npm install
+npm run dev
+```
