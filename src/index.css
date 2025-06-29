@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Quicksand:wght@300..700&family=Silkscreen:wght@400;700&family=VT323&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-title: "Press Start 2P", "sans-serif";
+  --font-title2: "Luckiest Guy", "sans-serif";
+  --font-body: "Quicksand", "sans-serif";
+  --font-retro1: "VT323", "sans-serif";
+  --font-retro2: "Silkscreen", "sans-serif";
+  --font-retro3: "Orbitron", "sans-serif";
+
+  /* 🎨 Pokémon Brand Colors */
+  --color-poke-yellow: #ffcb05;
+  --color-poke-blue: #3b4cca;
+  --color-poke-red: #cc0000;
+  --color-poke-white: #f5f5f5;
+  --color-poke-black: #1b1b1b;
+  --color-off-yellow: #f0c000;
+  --color-off-blue: #304890;
+  --color-off-green: #88804a;
+  --color-off-aster: #987bae;
+  --color-off-orchid: #7693ff;
+  --color-neon-green: #39ff14;
+  --color-neon-red: #ff073a;
+
+  --color-bg-dark: #0d1117;
+  --color-surface-dark: #161b22;
+  --color-border-dark: #30363d;
+  --color-text-light: #f5f5f5;
+  --color-muted-dark: #8b949e;
+
+  --color-accent: #ffcb05;
+  --color-win: #30a14e;
+  --color-lose: #d73a49;
+  --color-hover: #3b4cca;
+
+  /*Animation*/
+  --animate-blink: blink 1s step-start infinite;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: 1em;
+}
+
+/*global reset*/
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
