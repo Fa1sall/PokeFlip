@@ -69,7 +69,7 @@ export function PokeCards({ setAppStatus, difficulty }) {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 sm:px-0">
+    <div className="flex flex-col items-center justify-center">
       {isLoading ? (
         <div className="flex gap-4 justify-center items-center min-h-[70vh]">
           <div className="text-3xl font-title animate-pulse">Loading Cards</div>
@@ -120,6 +120,7 @@ export function PokeCards({ setAppStatus, difficulty }) {
             {pokemonData.map((card) => (
               <Tilt
                 key={card.id}
+                reset={true}
                 className={`w-full max-w-[170px] h-full
                   ${isShuffling ? "opacity-0" : "opacity-100"}
                   transition-opacity duration-300 ease-in-out cursor-pointer `}
